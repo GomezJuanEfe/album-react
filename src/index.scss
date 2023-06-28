@@ -1,0 +1,36 @@
+@import './global';
+
+/* NORMALIZE */
+
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: $primary-font, sans-serif;
+}
+
+body {
+  background-color: $Light-gray;
+}
+
+h1 {
+  font-size: $font-lg;
+  font-weight: 300;
+}
+
+h2, h3 {
+  font-size: $font-md;
+  font-weight: 300;
+}
+
+p {
+  font-size: $font-sm;
+  font-size: 300;
+}
+
+/* /NORMALIZE */
+

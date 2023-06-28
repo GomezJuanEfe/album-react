@@ -1,0 +1,17 @@
+@import '../../global';
+
+footer {
+  flex: 0;
+
+  text-align: center;
+
+  p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $Grayish-blue;
+  }
+}

@@ -1,0 +1,14 @@
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.music-card {
+  width: 100%;
+
+  > div {
+    margin-bottom: 20px;
+  }
+}
+
