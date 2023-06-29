@@ -1,13 +1,15 @@
 import './MusicCard.scss'
 
 function MusicCard({
+  id,
   coverUrl,
   artisName,
   songName,
   album,
   year,
   like,
-  genre
+  genre,
+  handleLike
 }) {
 
   return (
@@ -23,9 +25,13 @@ function MusicCard({
             <h4>{album}</h4>
             <h5>{year}</h5>
           </div>
-          <div>
-            <span>{genre}</span>
-            <span className='music-card__heart'></span>
+          <div className='music-card__last-div'>
+            <div>
+              <span className='music-card__genre'>{genre}</span>
+            </div>
+            <div onClick={() => handleLike(id)}>
+              <i className={`music-card__heart ${like ? 'fa-solid' : 'fa-regular' } fa-heart`}></i>
+            </div>
           </div>
         </div>
       </div>

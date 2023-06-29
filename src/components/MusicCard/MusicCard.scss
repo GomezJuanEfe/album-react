@@ -2,7 +2,8 @@
 
 .music-card__container {
   width: 100%;
-  max-width: 320px;
+  max-width: 400px;
+  min-height: 140px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -17,6 +18,7 @@
 .music-card__image {
   width: 40%;
   max-width: 300px;
+  align-self: stretch;
   object-fit: cover;
 
   border-top-left-radius: $border-radius-default;
@@ -24,6 +26,41 @@
 }
 
 .music-card__body {
+  width: 100%;
+  align-self: stretch;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+
   padding: 10px;
 }
 
+
+.music-card__last-div {
+  display: flex;
+  
+  margin-bottom: 4px;
+
+  > div:first-child {
+    flex: 1;
+  }
+
+  > div:nth-child(2) {
+    flex: 0;
+  }
+
+  .music-card__genre {
+    padding: 4px 10px;
+    border-radius: 20px;
+    background-color: $Dark-blue;
+    color: $White;
+  }
+
+  .music-card__heart {
+    font-size: $font-sm;
+  }
+
+  .fa-solid {
+    color: #ff5b5b;
+  }
+}
